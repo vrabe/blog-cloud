@@ -1,0 +1,19 @@
+@import "../../layout/index.scss";
+
+.post-tags {
+	list-style-type: none;
+	padding: 0;
+	li {
+		float: left;
+		padding: 8px 10px;
+		line-height: 1rem;
+		background-color: $lightGray;
+		color: #000;
+		margin: 5px;
+		//border-radius: 10px;
+		@include fluidType(15px, 17px);
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}

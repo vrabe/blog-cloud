@@ -1,0 +1,30 @@
+backend:
+  name: git-gateway
+
+local_backend: 
+  url: http://localhost:8000/api/v1
+
+locale: "zh_Hant"
+
+media_folder: static/assets
+public_folder: assets
+
+collections:
+  - name: blog
+    label: "Post"
+    folder: "content"
+    create: true
+    slug: "{{fields.slug}}"
+    path: "draft/{{slug}}/index"
+    media_folder: ''
+    public_folder: ''
+    sortableFields: ["title", "created", "updated"]
+    fields:
+      - { label: "標題", name: "title", widget: "string" }
+      - { label: "網址後綴", name: "slug", widget: "string" }
+      - { label: "封面圖片", name: "cover", widget: "image", default: "", required: false }
+      - { label: "建立時間", name: "created", widget: "datetime", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm:ss", format: "YYYY-MM-DD HH:mm:ss" }
+      - { label: "更新時間", name: "updated", widget: "datetime", dateFormat: "YYYY-MM-DD", timeFormat: "HH:mm:ss", format: "YYYY-MM-DD HH:mm:ss" }
+      - { label: "分類", name: "categories", widget: "list", default: [], required: false }
+      - { label: "標籤", name: "tags", widget: "list", default: [], required: false }
+      - { label: "內文", name: "body", widget: "markdown" }
