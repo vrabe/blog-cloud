@@ -228,18 +228,11 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-plugin-prefetch-google-fonts",
+      resolve: "gatsby-plugin-web-font-loader",
       options: {
-        fonts: [
-          {
-            family: "Oxygen Mono",
-            variants: ["400", "700"]
-          },
-          {
-            family: "PT Sans",
-            variants: ["400", "700"]
-          }
-        ]
+        google: {
+          families: ["Oxygen Mono:400,700", "PT Sans:400,700"]
+        }
       }
     },
     "gatsby-plugin-client-side-redirect"
