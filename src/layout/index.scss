@@ -1,6 +1,6 @@
 @import "begin";
 @import "~@fortawesome/fontawesome-svg-core/styles.css";
-@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@400;700&display=swap');
 
 $linkColor: #888;
 $mobileW: 768px;
@@ -32,7 +32,7 @@ html {
 }
 
 body {
-	font-family: "PT Sans", "Noto Sans CJK TC", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	font-family: "Oxygen", "Noto Sans CJK TC", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif;
 	@include fluidType(16px, 20px);
 	line-height: 1.8em;
 	word-wrap: break-word;
