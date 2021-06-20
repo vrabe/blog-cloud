@@ -7,7 +7,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
 
     const regularPath = withPrefix("/fonts/ModifiedQ-Regular.woff2");
     const boldPath = withPrefix("/fonts/ModifiedQ-Bold.woff2");
-    const css = `@font-face{font-family:"Modified Q";font-weight:400;unicode-range:U+51;src:url("${regularPath}")format("woff2");}@font-face{font-family:"Modified Q";font-weight:700;unicode-range:U+51;src:url("${boldPath}")format("woff2");}`;
+    const css = `@font-face{font-family:"Modified Q";font-weight:400;font-display:swap;unicode-range:U+51;src:url("${regularPath}")format("woff2");}@font-face{font-family:"Modified Q";font-weight:700;font-display:swap;unicode-range:U+51;src:url("${boldPath}")format("woff2");}`;
 
     setHeadComponents([
         <link
