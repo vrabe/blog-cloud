@@ -113,7 +113,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-sitemap",
       options: {
-        exclude: [`/categories/*`, `/tags/*`]
+        excludes: [`/categories/*`, `/tags/*`]
       }
     },
     {
