@@ -227,7 +227,23 @@ module.exports = {
         ]
       }
     },
-    "gatsby-plugin-preload-fonts",
+    {
+      resolve: "gatsby-plugin-webfonts",
+      options: {
+        fonts: {
+          google2:[
+            {
+              family: "Oxygen Mono",
+              axes: "wght@400;700"
+            },
+            {
+              family: "PT Sans",
+              axes: "wght@400;700"
+            }
+          ]
+        }
+      }
+    },
     "gatsby-plugin-client-side-redirect"
   ]
 };
