@@ -32,7 +32,7 @@ class PostListing extends React.Component {
           <li key={post.title}>
             <div className="post-meta">
               <Link to={post.path} className="post-link">
-                <h3 className="post-title">{post.title}</h3>
+                <h2 className="post-title">{post.title}</h2>
               </Link>
               <div className="post-date">
                 <FontAwesomeIcon icon={faCalendar} />

@@ -202,7 +202,9 @@ header {
 .post-title {
 	color: #222;
 	transition: color 0.3s ease;
-	margin: 0.1em 0;
+	margin: 0.1em 0.5em;
+	font-weight: bold;
+	font-size: 1.3rem;
 	&:hover {
 		color: $gray;
 		border-bottom: 0;
