@@ -87,8 +87,7 @@
     "lint:md": "remark content/",
     "write-good": "write-good $(glob 'content/posts/**/*.md')",
     "format:js": "prettier '**/*.{js,jsx}' --write",
-    "format:styles": "prettier '**/*.{css,scss}' --write",
-    "preload-fonts": "gatsby-preload-fonts"
+    "format:styles": "prettier '**/*.{css,scss}' --write"
   },
   "remarkConfig": {
     "plugins": [
