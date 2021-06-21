@@ -26,7 +26,7 @@ export const onRenderBody = ({ setHeadComponents }) => {
             crossOrigin="anonymous"
             href={boldPath}
         />,
-        <style dangerouslySetInnerHTML={{ __html: css }} />,
+        <style key="font-modified-Q-style" dangerouslySetInnerHTML={{ __html: css }} />,
     ]);
 
 };
