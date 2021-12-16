@@ -12,7 +12,7 @@ export default class TagTemplate extends React.Component {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <Layout>
-        <Helmet title={`🏷️ "${tag}" 相關文章  | ${config.siteTitle}`} />
+        <Helmet title={`🏷️ "${tag}" 相關文章 | ${config.siteTitle}`} />
         <Header showBackButton={true}>
           <h1>{`🏷️ "${tag}" 相關文章`}</h1>
         </Header>
